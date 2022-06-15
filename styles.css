@@ -30,8 +30,6 @@
   align-items: center;
   padding-top: 33px;
   padding-bottom: 40px;
-  padding-right: 18px;
-  padding-left: 18px;
   margin-top: 18px;
   margin-bottom: 18px;
   margin-left: auto;
@@ -40,6 +38,12 @@
   height: 770px;
   background-color: #334247;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
+}
+@media screen and (max-width: 460px) {
+  .price-card {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .price-card {
@@ -63,7 +67,7 @@
 .price-card_popular {
   position: absolute;
   right: -30px;
-  top: 30px;
+  top: 31px;
   height: 0;
   display: flex;
   justify-content: center;
@@ -163,15 +167,37 @@
   line-height: 17px;
   color: #fff;
   border-radius: 20px;
+  transition: transform 0.5s;
+}
+.price-card__order-btn:hover {
+  transform: scale(1.2);
 }
 .price-card__order-btn_green {
   background-color: #5bb189;
 }
+.price-card__order-btn_green:active {
+  box-shadow: inset 0px 3px 3px 1px rgba(0, 0, 0, 0.74);
+}
+.price-card__order-btn_green:focus {
+  border: 1px solid #fff;
+}
 .price-card__order-btn_blue {
   background-color: #3a6ba5;
 }
+.price-card__order-btn_blue:active {
+  box-shadow: inset 0px 3px 3px 1px rgba(0, 0, 0, 0.74);
+}
+.price-card__order-btn_blue:focus {
+  border: 1px solid #fff;
+}
 .price-card__order-btn_orange {
   background-color: #ec632a;
+}
+.price-card__order-btn_orange:active {
+  box-shadow: inset 0px 3px 3px 1px rgba(0, 0, 0, 0.74);
+}
+.price-card__order-btn_orange:focus {
+  border: 1px solid #fff;
 }
 
 * {

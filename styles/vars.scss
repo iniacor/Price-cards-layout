@@ -2,9 +2,15 @@ $bc-green: #5bb189;
 $bc-blue: #3a6ba5;
 $bc-orange: #ec632a;
 $md: 1200px;
+$sm: 460px;
 
 @mixin for-large-up {
   @media screen and (min-width: $md) {
+    @content;
+  }
+}
+@mixin for-small-up {
+  @media screen and (max-width: $sm) {
     @content;
   }
 }

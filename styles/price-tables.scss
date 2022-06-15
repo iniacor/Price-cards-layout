@@ -27,8 +27,6 @@
   align-items: center;
   padding-top: 33px;
   padding-bottom: 40px;
-  padding-right: 18px;
-  padding-left: 18px;
   margin-top: 18px;
   margin-bottom: 18px;
   margin-left: auto;
@@ -37,6 +35,10 @@
   height: 770px;
   background-color: #334247;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
+  @include for-small-up {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
   @include for-large-up {
     padding-right: 0;
     padding-left: 0;
@@ -55,7 +57,7 @@
   &_popular {
     position: absolute;
     right: -30px;
-    top: 30px;
+    top: 31px;
     height: 0;
     display: flex;
     justify-content: center;
@@ -157,14 +159,36 @@
     line-height: 17px;
     color: #fff;
     border-radius: 20px;
+    transition: transform 0.5s;
+    &:hover {
+      transform: scale(1.2);
+    }
     &_green {
       background-color: $bc-green;
+      &:active {
+        box-shadow: inset 0px 3px 3px 1px rgb(0 0 0 / 74%);
+      }
+      &:focus {
+        border: 1px solid #fff;
+      }
     }
     &_blue {
       background-color: $bc-blue;
+      &:active {
+        box-shadow: inset 0px 3px 3px 1px rgb(0 0 0 / 74%);
+      }
+      &:focus {
+        border: 1px solid #fff;
+      }
     }
     &_orange {
       background-color: $bc-orange;
+      &:active {
+        box-shadow: inset 0px 3px 3px 1px rgb(0 0 0 / 74%);
+      }
+      &:focus {
+        border: 1px solid #fff;
+      }
     }
   }
 }
