@@ -1,0 +1,32 @@
+@import 'price-tables.scss';
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #fff;
+  height: 100vh;
+  background-color: #141b1c;
+  @include for-large-up {
+    display: flex;
+  }
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+button {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+}

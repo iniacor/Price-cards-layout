@@ -1,0 +1,170 @@
+@import 'vars.scss';
+
+.price-cards {
+  display: flex;
+  max-width: 1440px;
+  height: 100%;
+  margin: auto;
+  @include for-large-up {
+    height: 1000px;
+  }
+  &__list {
+    display: block;
+    width: 1194px;
+    height: 100%;
+    margin: auto;
+    @include for-large-up {
+      display: flex;
+      justify-content: center;
+      height: 770px;
+    }
+  }
+}
+.price-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 33px;
+  padding-bottom: 40px;
+  padding-right: 18px;
+  padding-left: 18px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 380px;
+  height: 770px;
+  background-color: #334247;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
+  @include for-large-up {
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  &:not(:last-child) {
+    margin-bottom: 18px;
+    @include for-large-up {
+      margin-right: 18px;
+      margin-bottom: 0;
+    }
+  }
+  &_popular {
+    position: absolute;
+    right: -30px;
+    top: 30px;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    width: 147px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: 700;
+    border-bottom: 25px solid #dc3f45;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    transform: rotate(45deg);
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 33px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 43px;
+  }
+  &__subtitle {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+  &__price {
+    width: 100%;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 67px;
+    text-align: center;
+    margin-bottom: 40px;
+    &_green {
+      background-color: $bc-green;
+    }
+    &_blue {
+      background-color: $bc-blue;
+    }
+    &_orange {
+      background-color: $bc-orange;
+    }
+  }
+  &__price-number {
+    display: inline-block;
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+
+  &__description {
+    width: 328px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__option-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 39px;
+  }
+  &__option-list-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-left: 60px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: calc(50% - 7px);
+      left: 20px;
+      width: 15px;
+      height: 13px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    &_green::before {
+      background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png');
+    }
+    &_blue::before {
+      background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png');
+    }
+    &_orange::before {
+      background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png');
+    }
+
+    &:nth-child(odd) {
+      background-color: #2a343886;
+    }
+  }
+  &__order-btn {
+    width: 155px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    border-radius: 20px;
+    &_green {
+      background-color: $bc-green;
+    }
+    &_blue {
+      background-color: $bc-blue;
+    }
+    &_orange {
+      background-color: $bc-orange;
+    }
+  }
+}
