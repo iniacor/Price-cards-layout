@@ -12,7 +12,6 @@
 .price-cards__list {
   display: block;
   width: 1194px;
-  height: 100%;
   margin: auto;
 }
 @media screen and (min-width: 1200px) {
@@ -134,7 +133,7 @@
   display: flex;
   align-items: center;
   height: 50px;
-  padding-left: 60px;
+  padding-left: 59px;
 }
 .price-card__option-list-item::before {
   content: "";
