@@ -2,7 +2,6 @@
   display: flex;
   max-width: 1440px;
   height: 100%;
-  margin: auto;
 }
 @media screen and (min-width: 1200px) {
   .price-cards {
@@ -204,6 +203,9 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 15px;
