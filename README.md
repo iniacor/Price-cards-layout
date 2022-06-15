@@ -1,4 +1,4 @@
-# Price-cards-layout
+# Price cards layout
 
 
 **[Site link](https://iniacor.github.io/Price-cards-layout/)**
