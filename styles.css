@@ -134,28 +134,26 @@
   height: 50px;
   padding-left: 59px;
 }
-.price-card__options-list-item::before {
-  content: "";
+.price-card__options-list-item:nth-child(odd) {
+  background-color: rgba(42, 52, 56, 0.5254901961);
+}
+.price-card__options-list-greenmark, .price-card__options-list-bluemark, .price-card__options-list-orangemark {
   position: absolute;
-  top: calc(50% - 7px);
-  left: 23px;
+  left: 22px;
   width: 15px;
   height: 13px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
-.price-card__options-list-item_green::before {
+.price-card__options-list-greenmark {
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png");
 }
-.price-card__options-list-item_blue::before {
+.price-card__options-list-bluemark {
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png");
 }
-.price-card__options-list-item_orange::before {
+.price-card__options-list-orangemark {
   background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png");
-}
-.price-card__options-list-item:nth-child(odd) {
-  background-color: rgba(42, 52, 56, 0.5254901961);
 }
 .price-card__order-btn {
   width: 155px;

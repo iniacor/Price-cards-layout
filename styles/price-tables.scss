@@ -125,31 +125,31 @@
     align-items: center;
     height: 50px;
     padding-left: 59px;
-    &::before {
-      content: '';
-      position: absolute;
-      top: calc(50% - 7px);
-      left: 23px;
-      width: 15px;
-      height: 13px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-    }
-    &_green::before {
-      background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png');
-    }
-    &_blue::before {
-      background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png');
-    }
-    &_orange::before {
-      background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png');
-    }
-
     &:nth-child(odd) {
       background-color: #2a343886;
     }
   }
+  &__options-list-greenmark,
+  &__options-list-bluemark,
+  &__options-list-orangemark {
+    position: absolute;
+    left: 22px;
+    width: 15px;
+    height: 13px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  &__options-list-greenmark {
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png');
+  }
+  &__options-list-bluemark {
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png');
+  }
+  &__options-list-orangemark {
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png');
+  }
+
   &__order-btn {
     width: 155px;
     height: 40px;
