@@ -10,13 +10,14 @@
 }
 .price-cards__list {
   display: block;
-  width: 1194px;
+  width: 100%;
   margin: auto;
 }
 @media screen and (min-width: 1200px) {
   .price-cards__list {
     display: flex;
     justify-content: center;
+    width: 1194px;
     height: 770px;
   }
 }
