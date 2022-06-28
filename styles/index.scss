@@ -1,4 +1,4 @@
-@import 'price-tables.scss';
+@import 'price-cards.scss';
 * {
   box-sizing: border-box;
 }
@@ -6,12 +6,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
   color: #fff;
-  height: 100vh;
   background-color: #141b1c;
   @include for-large-up {
     display: flex;

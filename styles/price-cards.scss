@@ -1,29 +1,19 @@
 @import 'vars.scss';
 
 .price-cards {
-  display: flex;
-  max-width: 1440px;
-  height: 100%;
+  display: block;
+  margin: auto;
+  width: 100%;
   @include for-large-up {
-    height: 1000px;
-  }
-  &__list {
-    display: block;
-    width: 100%;
-    margin: auto;
-    @include for-large-up {
-      display: flex;
-      justify-content: center;
-      width: 1194px;
-      height: 770px;
-    }
+    display: flex;
+    justify-content: center;
+    width: 1194px;
+    height: 770px;
   }
 }
+
 .price-card {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-top: 33px;
   padding-bottom: 40px;
   margin-top: 18px;
@@ -32,19 +22,20 @@
   margin-right: auto;
   width: 380px;
   height: 770px;
+  text-align: center;
   background-color: #334247;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
   @include for-small-up {
-    margin-left: 18px;
     margin-right: 18px;
+    margin-left: 18px;
   }
   @include for-large-up {
     padding-right: 0;
     padding-left: 0;
     margin-top: 0;
+    margin-right: 0;
     margin-bottom: 0;
     margin-left: 0;
-    margin-right: 0;
   }
   &:not(:last-child) {
     margin-bottom: 18px;
@@ -55,19 +46,19 @@
   }
   &_popular {
     position: absolute;
-    right: -30px;
-    top: 31px;
-    height: 0;
     display: flex;
     justify-content: center;
+    top: 31px;
+    right: -30px;
     width: 147px;
-    text-transform: uppercase;
+    height: 0;
     font-size: 14px;
     line-height: 27px;
     font-weight: 700;
+    text-transform: uppercase;
+    border-right: 25px solid transparent;
     border-bottom: 25px solid #dc3f45;
     border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
     transform: rotate(45deg);
   }
   &__title {
@@ -86,12 +77,12 @@
     font-weight: 300;
   }
   &__price {
+    margin-bottom: 40px;
     width: 100%;
-    font-weight: 700;
     font-size: 55px;
+    font-weight: 700;
     line-height: 67px;
     text-align: center;
-    margin-bottom: 40px;
     &_green {
       background-color: $bc-green;
     }
@@ -109,23 +100,24 @@
   }
 
   &__description {
-    width: 328px;
-    text-align: center;
+    margin-right: auto;
     margin-bottom: 40px;
+    margin-left: auto;
+    width: 328px;
   }
   &__options-list {
     display: flex;
     flex-direction: column;
-    width: 100%;
     margin-bottom: 39px;
+    width: 100%;
   }
 
   &__options-list-item {
     position: relative;
     display: flex;
+    padding-left: 59px;
     align-items: center;
     height: 50px;
-    padding-left: 59px;
     &:nth-child(odd) {
       background-color: #2a343886;
     }
@@ -152,10 +144,12 @@
   }
 
   &__order-btn {
+    margin-left: auto;
+    margin-right: auto;
     width: 155px;
     height: 40px;
-    font-weight: 400;
     font-size: 14px;
+    font-weight: 400;
     line-height: 17px;
     color: #fff;
     border-radius: 20px;
