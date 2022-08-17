@@ -26,12 +26,6 @@
   background-color: #334247;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
 }
-@media screen and (max-width: 460px) {
-  .price-card {
-    margin-right: 18px;
-    margin-left: 18px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .price-card {
     padding-right: 0;
