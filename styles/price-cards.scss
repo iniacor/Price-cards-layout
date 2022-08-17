@@ -117,9 +117,9 @@
       background-color: #2a343886;
     }
   }
-  &__options-list-greenmark,
-  &__options-list-bluemark,
-  &__options-list-orangemark {
+  &_greenmark,
+  &_bluemark,
+  &_orangemark {
     position: absolute;
     left: 22px;
     width: 15px;
@@ -128,13 +128,13 @@
     background-position: center;
     background-size: contain;
   }
-  &__options-list-greenmark {
+  &_greenmark {
     background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png');
   }
-  &__options-list-bluemark {
+  &_bluemark {
     background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png');
   }
-  &__options-list-orangemark {
+  &_orangemark {
     background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png');
   }
 
