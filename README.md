@@ -3,7 +3,7 @@
 
 **[Site link](https://iniacor.github.io/Price-cards-layout/)**
 
-<p>Layout supports 1440px versions</p>
+<p>Layout supports 1440px version</p>
 
 ## The tech stack is:
 
